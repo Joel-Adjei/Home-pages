@@ -1,0 +1,20 @@
+.courseOptions::-webkit-scrollbar{
+    height: 2px;
+    background: transparent;
+}
+.courseOpt{
+    color: #4343ff;
+}
+.courseDisplay::-webkit-scrollbar{
+    width: 3px;
+    background: transparent;
+}
+.courseDisplay::-webkit-scrollbar-track{
+    width: 2px;
+    /*background: gainsboro;*/
+}
+.courseDisplay::-webkit-scrollbar-thumb , .courseOptions::-webkit-scrollbar-thumb {
+    width: 3px;
+    background: #acd7e7;
+    border-radius: 30px;
+}

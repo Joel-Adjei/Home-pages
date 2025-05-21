@@ -10,7 +10,7 @@ const HeroSection = () => {
     return (
         <div className={"w-full h-full pt-20 flex flex-col md:flex-row "}>
             <div className={" flex flex-col items-center w-full md:w-[50%] md:items-start"}>
-                <AppText className={"text-[40px] text-center md:text-left md:text-[60px] font-bold"}>
+                <AppText className={"text-[40px] leading-16 text-center md:text-left md:text-[60px] font-bold"}>
                     Education that prepare you for what's next
                 </AppText>
                 <AppText className={"text-sm text-center md:text-left mb-7"}>
@@ -29,7 +29,7 @@ const HeroSection = () => {
             </div>
 
             <AppRate
-                className={"bottom-27 right-40 md:right-120"}
+                className={"bottom-27 right-40 sm:right-90 md:right-55 lg:right-120"}
                 logo={<HiOutlineUser color={"white"} /> }
                 text={"Success Rate"}
                 percent={"93%"}

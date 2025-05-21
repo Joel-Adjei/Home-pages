@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
 
             <div className={"flex items-center gap-5"} >
-                <ul className={`${displayMobileNav} fixed top-0 left-0 w-full h-[100vh] flex-col bg-gray-100 items-center 
+                <ul className={`${displayMobileNav} fixed bottom-0 top-0 left-0 w-full h-[100lvh] flex-col bg-gray-100 items-center 
                                 md:flex md:flex-row md:relative md:size-fit`}>
                     <button
                         className={"md:hidden cursor-pointer absolute top-1 right-1"}

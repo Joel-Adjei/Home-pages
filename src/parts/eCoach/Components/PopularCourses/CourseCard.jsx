@@ -16,7 +16,7 @@ const CourseCard = ({title, numOfStudent, lessons , rate , key , price}) => {
     return (
         <div style={{backgroundColor: colors.lightBlue}}
              key={key}
-             className={"w-full bg-white shadow-lg"}>
+             className={"w-full h-fit bg-white shadow-lg"}>
             <div className={"w-full h-50 overflow-hidden"}>
                 <img className={"w-full object-cover object-center"} src={img}  />
             </div>
@@ -55,7 +55,7 @@ const CourseCard = ({title, numOfStudent, lessons , rate , key , price}) => {
                 <div style={{backgroundColor: "lightgray"}} className={"w-full h-[1px] my-3"}> </div>
 
                 <div>
-                    <AppButton title={'$'+price} showIcon={false} />
+                    <AppButton title={price+".00"} showIcon={false} />
                 </div>
             </div>
 
