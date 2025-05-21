@@ -1,0 +1,57 @@
+import React, {useState} from "react";
+import {BiChevronDown, BiListUl} from "react-icons/bi";
+import {AiFillCloseCircle} from "react-icons/ai";
+import AppButton from "./primary/Button";
+import AppText from "./primary/AppText";
+import {colors} from "../config/colors";
+
+const li = ["Demos" , "All Pages" , "Courses", "Shop" , "Blog", "Contact Us"]
+
+const Navbar = () => {
+    const [displayMobileNav , setDisplayMobileNav] = useState("hidden")
+    return (
+        <nav className={"sticky z-50 top-0 w-full py-2 bg-gray-100 flex items-center justify-between px-6 sm:px-15 border-b-1 border-gray-200"}>
+            {/*Logo*/}
+            <div className={"logo flex items-center justify-center"}>
+                <button
+                    className={"md:hidden"}
+                    onClick={()=> setDisplayMobileNav("flex")}
+                >
+                    <BiListUl size={35} className={"text-blue-500"} />
+                </button>
+
+                <p className={"text-orange-300 font-bold text-2xl"}>e
+                    <span  className={"text-blue-400"}>Coach</span>
+                </p>
+            </div>
+
+            <div className={"flex items-center gap-5"} >
+                <ul className={`${displayMobileNav} fixed top-0 left-0 w-full h-[100vh] flex-col bg-gray-100 items-center 
+                                md:flex md:flex-row md:relative md:size-fit`}>
+                    <button
+                        className={"md:hidden cursor-pointer absolute top-1 right-1"}
+                        onClick={()=> setDisplayMobileNav("hidden")}
+                    >
+                        <AiFillCloseCircle size={50} className={"text-blue-500"} />
+                    </button>
+                    {
+                        li.map(((value, index) =>
+                            <li className={"w-full hover:bg-gray-200 cursor-pointer flex items-center gap-2 px-3 py-2 md:w-fit md:py-0"} key={index}>
+                                <AppText className={"text-sm"}>
+                                    {value}
+                                </AppText>
+                                <BiChevronDown className={"text-gray-700"} />
+                            </li>
+                        ))
+                    }
+                </ul>
+
+                <div style={{backgroundColor: colors.blue}}>
+                    <AppButton title={"Login/Register"} showIcon={false} />
+                </div>
+            </div>
+        </nav>
+    )
+}
+
+export default Navbar
