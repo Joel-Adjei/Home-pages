@@ -8,13 +8,13 @@ import AppButton from "../Components/primary/Button";
 const Card = ({className , name, field , key}) => {
     return (
         <div key={key}
-             className={"w-full h-70 md:h-90 w-20 cursor-pointer hover:bg-white "+ className}>
+             className={"w-full h-50 sm:h-90 md:w-20 cursor-pointer hover:bg-white "+ className}>
             <div className={"w-full h-[80%] bg-gray-400 overflow-hidden"}>
                 {/*<img className={"w-full object-cover object-center"} src={img}  />*/}
             </div>
 
-            <div className={"w-full my-2 p-3"}>
-                <AppText className={"font-bold text-[18px]"}>{name}</AppText>
+            <div className={"w-full my-2"}>
+                <AppText className={"font-bold leading-5 text-[18px]"}>{name}</AppText>
                 <AppText className={"blue text-[14px] text-blue-600"}>{field}</AppText>
             </div>
         </div>

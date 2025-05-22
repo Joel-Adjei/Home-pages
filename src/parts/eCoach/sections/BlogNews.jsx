@@ -13,13 +13,13 @@ const BlogCard = ({title, datePosted, category , key}) => {
     return (
         <div key={key}
              className={"w-full h-fit border-1 cursor-pointer border-gray-100 hover:bg-white shadow-md"}>
-            <div className={"w-full h-50 overflow-hidden"}>
+            <div className={"w-full md:h-50 overflow-hidden"}>
                 <img className={"w-full object-cover object-center"} src={img}  />
             </div>
 
-            <div className={"w-full my-2 p-3"}>
+            <div className={"w-full p-2 "}>
 
-                <div className={"flex items-center gap-1 my-2 py-2"}>
+                <div className={"flex flex-col items-start md:flex-row md:items-center gap-1 my-2 py-2"}>
                     <div className={"flex items-center justify-center gap-1 pr-2"}>
                         <AiOutlineCalendar color={colors.black} />
                         <AppText className={"text-[11px]"} >{datePosted}</AppText>
@@ -54,7 +54,7 @@ const BlogNews = () => {
 
     return (
         <div className={"w-full flex flex-col items-center bg-white py-17 px-9 md:px-16"}>
-            <Headers title={"Find your perfect program"} heading={"Popular Courses"} />
+            <Headers className={"text-center"} title={"Find your perfect program"} heading={"Popular Courses"} />
 
             <div className={"mt-2 w-full h-fit grid grid-cols-2 md:grid-cols-3 justify-center gap-3 py-7 px-3"}>
                 {
