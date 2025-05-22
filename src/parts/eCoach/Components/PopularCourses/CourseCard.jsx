@@ -14,21 +14,20 @@ const CourseCard = ({title, numOfStudent, lessons , rate , key , price}) => {
     console.log(colored.length)
     empty.length = Number(5 - colored.length)
     return (
-        <div style={{backgroundColor: colors.lightBlue}}
-             key={key}
-             className={"w-full h-fit bg-white shadow-lg"}>
+        <div key={key}
+             className={"w-full h-fit bg-blue-100 border-1 backdrop-opacity-[50%] cursor-pointer border-gray-200 hover:bg-white shadow-xl"}>
             <div className={"w-full h-50 overflow-hidden"}>
                 <img className={"w-full object-cover object-center"} src={img}  />
             </div>
 
-            <div className={"w-full p-2"}>
+            <div className={"w-full my-2 p-3"}>
                 <AppText className={"font-bold text-sm"}>{title}</AppText>
 
-                <div className={"flex gap-2"}>
+                <div className={" mt-2 flex gap-2"}>
                     <div className={"flex"}>
                         {
                              colored.map(()=>
-                                <AiFillStar repeatCount={4}  color={"yellow"} />
+                                <AiFillStar className={"text-yellow-400"}  color={"yellow"} />
                             )
                         }
                         {
@@ -41,7 +40,7 @@ const CourseCard = ({title, numOfStudent, lessons , rate , key , price}) => {
                     <AppText className={"text-[10px]"}>{rate}</AppText>
                 </div>
 
-                <div className={"flex items-center gap-1 py-2"}>
+                <div className={"flex items-center gap-1 my-2 py-2"}>
                     <div className={"flex items-center justify-center gap-y pr-2"}>
                         <HiOutlineUsers color={colors.black} />
                         <AppText className={"text-[9px]"} >{numOfStudent}</AppText>
@@ -52,7 +51,7 @@ const CourseCard = ({title, numOfStudent, lessons , rate , key , price}) => {
                     </div>
                 </div>
 
-                <div style={{backgroundColor: "lightgray"}} className={"w-full h-[1px] my-3"}> </div>
+                <div style={{backgroundColor: "lightgray"}} className={"w-full h-[1px] my-5"}> </div>
 
                 <div>
                     <AppButton title={price+".00"} showIcon={false} />

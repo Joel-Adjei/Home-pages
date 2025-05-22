@@ -27,7 +27,7 @@ const BottomDetails = () => {
                   desc={"jdfoajdfjsdfjsdfjasfddadadadsadsd"}
             />
 
-            <Card title={"24/7 help"} className={"hidden sm:flex"}
+            <Card title={"24/7 help"} className={""}
                       desc={"jdfoajdfadadsadsd"}
             />
 

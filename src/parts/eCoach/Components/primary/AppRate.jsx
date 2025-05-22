@@ -6,12 +6,12 @@ import {HiOutlineUser} from "react-icons/hi";
 const AppRate = ({logo , percent , text , className}) => {
     return (
         <div className={"absolute bg-white flex items-center p-2 pr-8 gap-5 shadow-lg " + className}>
-            <div  className={"size-10 bg-orange-400 flex items-center text-[20px] justify-center md:size-15 md:text-[30px]"}>
+            <div  className={"size-15 bg-yellow-400 flex items-center text-[35px] justify-center md:size-19 md:text-[50px]"}>
                 {logo}
             </div>
-            <div className={"flex flex-col"}>
-                <AppText className={" md:text-[20px] font-bold"}>{percent}</AppText>
-                <AppText className={"text-sm" }>{text}</AppText>
+            <div className={"flex flex-col justify-center"}>
+                <AppText className={"text-[30px] leading-5 md:text-[40px] md:leading-9 font-bold"}>{percent}</AppText>
+                <AppText className={"md:text-xl" }>{text}</AppText>
             </div>
         </div>
     )

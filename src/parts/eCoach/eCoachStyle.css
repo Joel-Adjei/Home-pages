@@ -3,7 +3,18 @@
     background: transparent;
 }
 .courseOpt{
-    color: #4343ff;
+    color: #161618;
+    font-weight: 500;
+}
+.blogButton{
+    color: #1212f6;
+    font-weight: 400;
+}
+.blue{
+    color: #1243f6;
+}
+.shade{
+    color: #bebebe;
 }
 .courseDisplay::-webkit-scrollbar{
     width: 3px;

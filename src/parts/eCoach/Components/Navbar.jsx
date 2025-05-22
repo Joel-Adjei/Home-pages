@@ -10,7 +10,7 @@ const li = ["Demos" , "All Pages" , "Courses", "Shop" , "Blog", "Contact Us"]
 const Navbar = () => {
     const [displayMobileNav , setDisplayMobileNav] = useState("hidden")
     return (
-        <nav className={"sticky z-50 top-0 w-full py-2 bg-gray-100 flex items-center justify-between px-6 sm:px-15 border-b-1 border-gray-200"}>
+        <nav className={"sticky z-50 top-0 w-full py-2 bg-white flex items-center justify-between px-6 sm:px-15 border-b-1 border-gray-200"}>
             {/*Logo*/}
             <div className={"logo flex items-center justify-center"}>
                 <button
@@ -27,7 +27,7 @@ const Navbar = () => {
 
             <div className={"flex items-center gap-5"} >
                 <ul className={`${displayMobileNav} fixed bottom-0 top-0 left-0 w-full h-[100lvh] flex-col bg-gray-100 items-center 
-                                md:flex md:flex-row md:relative md:size-fit`}>
+                                md:flex md:flex-row md:relative md:size-fit md:bg-transparent`}>
                     <button
                         className={"md:hidden cursor-pointer absolute top-1 right-1"}
                         onClick={()=> setDisplayMobileNav("hidden")}

@@ -3,13 +3,12 @@ import AppText from "./primary/AppText";
 import AppButton from "./primary/Button";
 import AppRate from "./primary/AppRate";
 import {HiOutlineUser, HiStar} from "react-icons/hi";
-import {colors} from "../config/colors";
-import heroImg from "../config/heroimg.png"
+import heroImg from "../config/heroimg-1.png"
 
 const HeroSection = () => {
     return (
-        <div className={"w-full h-full pt-20 flex flex-col md:flex-row "}>
-            <div className={" flex flex-col items-center w-full md:w-[50%] md:items-start"}>
+        <div className={"w-full h-full flex flex-col md:flex-row "}>
+            <div className={" flex flex-col items-center w-full pt-20 md:w-[50%] md:items-start"}>
                 <AppText className={"text-[40px] leading-16 text-center md:text-left md:text-[60px] font-bold"}>
                     Education that prepare you for what's next
                 </AppText>
@@ -21,11 +20,11 @@ const HeroSection = () => {
             </div>
 
             {/*Image*/}
-            <div className={" relative overflow-hidden w-full h[50%] md:w-[50%]"}>
-                <div className={"absolute bg-blue-500 right-10 md:right-20 size-9 md:size-12 flex items-center text-[30px] justify-center md:text-[20px]"}>
+            <div className={" relative overflow-hidden flex justify-center w-full h[50%] md:w-[50%]"}>
+                <div className={"absolute bg-blue-500 right-10 bottom-60 size-11 flex items-center text-[30px] justify-center md:size-15 md:right-20 md:bottom-70  md:text-[40px]"}>
                     <HiStar color={"white"} />
                 </div>
-                <img src={heroImg} className={"w-[900px] h-full mb-[-145px] mt-[-45px] object-contain"} />
+                <img src={heroImg} className={"w-[420px] sm:w-[430px] mt-6 md:w-full mb-[-70px] md:mb-[-30px] object-contain"} />
             </div>
 
             <AppRate
