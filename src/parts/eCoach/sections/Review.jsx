@@ -51,7 +51,7 @@ const Review = () => {
         ]
     }
     return (
-        <div className={"w-full bg-gray-100 pt-15 pb-16 px-16 lg:px-30"}>
+        <div className={"w-full bg-gray-100 pt-15 pb-16 px-6 md:px-16 lg:px-30"}>
             <Headers title={"What our students say"} heading={"Review"} className={"items-start leading-2"} />
 
             <div className={"w-full"}>
