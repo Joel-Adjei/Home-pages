@@ -6,7 +6,7 @@ import AppText from "../Components/primary/AppText";
 const Community = () => {
 
     return (
-        <div className={"relative w-full bg-blue-700  py-17 px-8 md:px-15"}>
+        <div className={"relative w-full bg-blue-700  py-17 px-8 md:px-15 lg:px-30"}>
             <AppText className={"font-[600] text-white text-[30px] text-center mb-7 sm:text-[40px]"}>Building a lifelong learning Community</AppText>
             <div className={"flex flex-col md:flex-row text-center md:text-left items-center"}>
                 <div className={"flex-1 flex flex-col items-center md:items-start pb-5 md:pb-0 md:pr-7"}>

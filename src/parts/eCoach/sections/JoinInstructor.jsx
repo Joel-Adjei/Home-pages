@@ -4,13 +4,13 @@ import AppRate from "../Components/primary/AppRate";
 import {HiOutlineUser } from "react-icons/hi";
 import Headers from "../Components/primary/Headers";
 import AppButton from "../Components/primary/Button";
-
+import img from "../config/intrImg-Joseph-3.jpg"
 
 
 const JoinInstructor = () => {
 
     return (
-        <div className={"relative w-full bg-white flex flex-col-reverse py-17 px-8 md:px-15 md:flex-row-reverse"}>
+        <div className={"relative w-full bg-white flex flex-col-reverse py-17 px-8 md:px-15 lg:px-30 md:flex-row-reverse"}>
             <AppRate
                 className={"bottom-23 right-40 sm:right-97 md:right-90 "}
                 logo={<HiOutlineUser color={"white"} /> }
@@ -20,7 +20,7 @@ const JoinInstructor = () => {
 
             <div className={"w-full md:w-120"}>
                 <div className={"w-full h-110 md:h-full bg-gray-300"}>
-
+                    <img className={"w-full object-contain"} src={img}  />
                 </div>
             </div>
 

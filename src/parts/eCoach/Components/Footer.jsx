@@ -9,7 +9,7 @@ const li = ["About Us" , "Categories" , "Popular Courses", "FAQs" , "Reviews"]
 
 const Footer = () => {
     return (
-        <footer className={"w-full pt-13 px-7 bg-gray-900 sm:px-15"}>
+        <footer className={"w-full pt-13 px-7 bg-gray-900 sm:px-15 lg:px-30"}>
             <div className={"w-full flex flex-col items-center gap-12 items-between pb-7 sm:flex-row"}>
                 <div className={"logo flex-2 text-white"} >
                     {/*Logo*/}

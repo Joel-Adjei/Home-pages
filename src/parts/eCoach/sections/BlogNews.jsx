@@ -53,7 +53,7 @@ const BlogNews = () => {
     const [dataDisplay, setDataDisplay] = useState(data)
 
     return (
-        <div className={"w-full flex flex-col items-center bg-white py-17 px-9 md:px-16"}>
+        <div className={"w-full flex flex-col items-center bg-white py-17 px-9 lg:px-30 md:px-16"}>
             <Headers className={"text-center"} title={"Find your perfect program"} heading={"Popular Courses"} />
 
             <div className={"mt-2 w-full h-fit grid grid-cols-2 md:grid-cols-3 justify-center gap-3 py-7 px-3"}>
