@@ -10,14 +10,14 @@ import Amos from "../config/intrImg-Amos.png"
 const Card = ({className , name, field , img , key}) => {
     return (
         <div key={key}
-             className={"w-full h-50 sm:h-90 lg:w-65 "+ className}>
+             className={"w-full h-60 sm:h-90 lg:w-65 "+ className}>
             <div className={"w-full  h-[80%] bg-gray-400 overflow-hidden"}>
-                <img className={"w-full object-cover object-center"} src={img}  />
+                <img className={"size-full object-cover object-center"} src={img}  />
             </div>
 
-            <div className={"w-full my-2"}>
+            <div className={"w-full mt-3"}>
                 <AppText className={"font-bold leading-5 text-[18px]"}>{name}</AppText>
-                <AppText className={"blue text-[14px] text-blue-600"}>{field}</AppText>
+                <AppText className={"blue text-[12px] mt-1 leading-4 text-blue-600"}>{field}</AppText>
             </div>
         </div>
     )
@@ -27,9 +27,9 @@ const data = [
     {id: 1 , name: "Caneron Williamson" , field: "Wordpress Developer" , img:gideon },
     {id: 2 ,name: "Ronney Apreku" , field: "UI Designerr" , img:Ronney},
     {id: 3 , name: "Joel Adjei" , field: "FullStack Engineer", img:gideon},
-    {id: 4 ,name: "Joseph Terpkson" , field: "Frontend Developer" , img:joseph},
-    {id: 5 , name: "Theresa Webb" , field: "UI Designer", img:gideon},
-    {id: 6 ,name: "Darlene Robertson" , field: "Python Developer", img:Amos}
+    {id: 4 ,name: "Joseph Terpkson" , field: "System Administrator" , img:joseph},
+    {id: 5 , name: "Theresa Webb" , field: "Frontend Developer", img:gideon},
+    {id: 6 ,name: "Amos Gyasi" , field: "Python Developer", img:Amos}
 ]
 
 const Instructors = () => {
@@ -37,7 +37,7 @@ const Instructors = () => {
 
     return (
         <div className={"w-full flex flex-col items-center bg-white py-17 px-9 md:px-16 lg:px-30"}>
-            <Headers title={"Meet our experts"} heading={"Instructors"} />
+            <Headers title={"Meet our experts"} heading={"Instructors"} className={"text-center"} />
 
             <div className={"mt-2 w-full h-fit grid grid-cols-2 md:grid-cols-3 place-items-center justify-center gap-8 lg:gap-0 pb-7"}>
                 {
@@ -45,7 +45,7 @@ const Instructors = () => {
                         <>
                             {value.id === 2 || value.id === 5 ?
                                 <Card
-                                    className={"md:mt-8"}
+                                    className={"md:mt-10"}
                                     key={value.id}
                                     name={value.name}
                                     field={value.field}

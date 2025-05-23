@@ -4,6 +4,7 @@ import AppRate from "../Components/primary/AppRate";
 import {HiOutlineUser, HiCheckCircle} from "react-icons/hi";
 import Headers from "../Components/primary/Headers";
 import AppButton from "../Components/primary/Button";
+import img from "../config/intrImg-Joseph.jpg";
 
 
 
@@ -20,7 +21,7 @@ const About = () => {
                 />
 
                 <div className={"w-full h-110 md:h-full bg-gray-300"}>
-
+                    <img className={"size-full object-cover"} src={img}  />
                 </div>
             </div>
 

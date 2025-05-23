@@ -20,7 +20,7 @@ const JoinInstructor = () => {
 
             <div className={"w-full md:w-120"}>
                 <div className={"w-full h-110 md:h-full bg-gray-300"}>
-                    <img className={"w-full object-contain"} src={img}  />
+                    <img className={"size-full object-cover"} src={img}  />
                 </div>
             </div>
 

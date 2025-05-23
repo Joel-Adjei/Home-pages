@@ -51,8 +51,8 @@ const Review = () => {
         ]
     }
     return (
-        <div style={{backgroundColor: colors.lightBlue}} className={"w-full pt-15 pb-16 px-16 lg:px-30"}>
-            <Headers title={"What our students say"} heading={"Review"} className={"items-start"} />
+        <div className={"w-full bg-gray-100 pt-15 pb-16 px-16 lg:px-30"}>
+            <Headers title={"What our students say"} heading={"Review"} className={"items-start leading-2"} />
 
             <div className={"w-full"}>
                 <Slider {...settings} >

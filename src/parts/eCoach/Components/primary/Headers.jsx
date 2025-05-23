@@ -8,7 +8,7 @@ const Headers = ({ className , title , heading }) => {
             <div>
                 <p className={"font-[Montserrat] text-gray-600 text-sm "}>{heading}</p>
             </div>
-            <h3 className={"text-[29px] font-[Nexa] leading-12 font-bold sm:text-left sm:text-[33px]"}>{title}</h3>
+            <h3 className={"text-[29px] font-[Nexa] leading-8 md:leading-12 font-bold sm:text-left sm:text-[33px]"}>{title}</h3>
             <div className={"w-20 mt-1 bg-blue-600 h-[2px]"}> </div>
         </div>
     )

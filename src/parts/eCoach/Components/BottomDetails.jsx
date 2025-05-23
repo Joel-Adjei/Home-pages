@@ -21,10 +21,10 @@ const BottomDetails = () => {
     return (
         <div className={"absolute right-0 bottom-[-60px] w-full px-17 gap-2 flex flex-wrap justify-between items-center md:flex-row md:right-0 md:bottom-[-30px]"}>
             <Card title={"24/7 help"}
-                  desc={"jdfoajdfjsadadadsadsd"}
+                  desc={"jdfoajdfjsadad"}
             />
             <Card title={"24/7 help"}
-                  desc={"jdfoajdfjsdfjsdfjasfddadadadsadsd"}
+                  desc={"jdfoajdfdsadsd"}
             />
 
             <Card title={"24/7 help"} className={""}
