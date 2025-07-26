@@ -11,7 +11,7 @@ const PopularCourses = () => {
     const activeStyle = "border-1 border-transparent"
     const notActiveStyle = "courseOpt bg-white py-0 text-blue-500 border-1 border-gray-200"
     return (
-        <div className={"w-full text-center pt-35 bg-white pb-20"}>
+        <div id={"courses"} className={"w-full text-center pt-35 bg-white pb-20"}>
             <Headers title={"Find your perfect program"} heading={"Popular Courses"} />
 
             <div className={"w-full"}>

@@ -11,7 +11,7 @@ import img from "../config/intrImg-Joseph.jpg";
 const About = () => {
 
     return (
-        <div className={"w-full bg-gray-100 flex flex-col py-17 px-8 md:px-15 lg:px-30 md:flex-row"}>
+        <div id={"about"} className={"w-full bg-gray-100 flex flex-col py-17 px-8 md:px-15 lg:px-30 md:flex-row"}>
             <div className={"relative flex-1 md:pr-10"}>
                 <AppRate
                     className={"bottom-7 left-4 "}

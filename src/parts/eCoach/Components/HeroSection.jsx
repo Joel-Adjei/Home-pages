@@ -7,7 +7,7 @@ import heroImg from "../config/heroimg-1.png"
 
 const HeroSection = () => {
     return (
-        <div className={"w-full h-full flex flex-col md:flex-row "}>
+        <div id={"home"} className={"w-full h-full flex flex-col md:flex-row "}>
             <div className={" flex flex-col items-center w-full pt-10 md:pt-20 md:w-[50%] md:items-start"}>
                 <AppText className={"text-[40px] leading-12 sm:leading-16 text-center md:text-left md:text-[60px] font-bold"}>
                     Education that prepare you for what's next

@@ -5,7 +5,29 @@ import AppButton from "./primary/Button";
 import AppText from "./primary/AppText";
 import {colors} from "../config/colors";
 
-const li = ["Demos" , "All Pages" , "Courses", "Shop" , "Blog", "Contact Us"]
+const li = [
+    {
+        title:  "Home",
+        a: "#home"
+    },
+    {
+        title:  "Courses",
+        a: "#courses"
+    },
+    {
+        title:  "About",
+        a: "#about"
+    },
+    {
+        title:  "Instructors",
+        a: "#instructors"
+    },
+    {
+        title:  "Reviews",
+        a: "#review"
+    },
+]
+// const li = ["Demos" , "All Pages" , "Courses", "Shop" , "Blog", "Contact Us"]
 
 const Navbar = () => {
     const [displayMobileNav , setDisplayMobileNav] = useState("hidden")
@@ -37,10 +59,13 @@ const Navbar = () => {
                     {
                         li.map(((value, index) =>
                             <li className={"w-full hover:bg-gray-200 cursor-pointer flex items-center gap-2 px-3 py-2 md:w-fit md:py-0"} key={index}>
-                                <AppText className={"text-sm"}>
-                                    {value}
-                                </AppText>
-                                <BiChevronDown className={"text-gray-700"} />
+                                <a href={value.a}
+                                   onClick={()=> setDisplayMobileNav("hidden")}
+                                >
+                                    <AppText className={"text-sm p-3"}>
+                                        {value.title}
+                                    </AppText>
+                                </a>
                             </li>
                         ))
                     }

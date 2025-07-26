@@ -36,7 +36,7 @@ const Instructors = () => {
     const [dataDisplay, setDataDisplay] = useState(data)
 
     return (
-        <div className={"w-full flex flex-col items-center bg-white py-17 px-9 md:px-16 lg:px-30"}>
+        <div id={"instructors"} className={"w-full flex flex-col items-center bg-white py-17 px-9 md:px-16 lg:px-30"}>
             <Headers title={"Meet our experts"} heading={"Instructors"} className={"text-center"} />
 
             <div className={"mt-2 w-full h-fit grid grid-cols-2 md:grid-cols-3 place-items-center justify-center gap-8 lg:gap-0 pb-7"}>
